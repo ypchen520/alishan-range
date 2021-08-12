@@ -1,0 +1,1 @@
+# [Explaining a fraud detection model with Cloud AI Platform](https://codelabs.developers.google.com/codelabs/fraud-detection-ai-explanations?hl=en&continue=https%3A%2F%2Fcodelabs.developers.google.com%2F%3Fcat%3Dmachinelearning#0)

@@ -1,0 +1,10 @@
+# Path Sum II
+
+## Description
+
+* Given the root of a binary tree and an integer targetSum, return all root-to-leaf paths where each path's sum equals targetSum.
+* A leaf is a node with no children.
+
+## Solution
+
+### DFS

@@ -1,0 +1,44 @@
+hello
+world
+1234, 5678, 9012, 3456
+Peer 0 has downloaded the piece 1 from 2. Now the number of pieces it has is 10.
+hello
+world
+1234, 5678, 9012, 3456
+Peer 0 received the 'interested' message from 2.
+Peer 0 has downloaded the piece 1 from 2. Now the number of pieces it has is 10.
+hello
+world
+1234, 5678, 9012, 3456
+Peer 0 received the 'interested' message from 2.
+Peer 0 has downloaded the piece 1 from 2. Now the number of pieces it has is 10.
+hello
+world
+1234, 5678, 9012, 3456
+Peer 0 received the 'interested' message from 2.
+Peer 0 has downloaded the piece 1 from 2. Now the number of pieces it has is 10.
+hello
+world
+1234, 5678, 9012, 3456
+Peer 0 received the 'interested' message from 2.
+Peer 0 has downloaded the piece 1 from 2. Now the number of pieces it has is 10.
+hello
+world
+1234, 5678, 9012, 3456
+Peer 0 received the 'interested' message from 2.
+Peer 0 has downloaded the piece 1 from 2. Now the number of pieces it has is 10.
+hello
+world
+1234, 5678, 9012, 3456
+Peer 0 received the 'interested' message from 2.
+Peer 0 has downloaded the piece 1 from 2. Now the number of pieces it has is 10.
+hello
+world
+1234, 5678, 9012, 3456
+Peer 0 received the 'interested' message from 2.
+Peer 0 has downloaded the piece 1 from 2. Now the number of pieces it has is 10.
+hello
+world
+1234, 5678, 9012, 3456
+Peer 0 received the 'interested' message from 2.
+Peer 0 has downloaded the piece 1 from 2. Now the number of pieces it has is 10.

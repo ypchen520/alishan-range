@@ -1,0 +1,67 @@
+body {
+    background: white;
+}
+
+h2:hover {
+    color: red;
+}
+
+.title {
+    color: red;
+}
+
+.subtitle {
+    color: blueviolet;
+}
+
+.about-me {
+    color: blue;
+}
+
+#contact-us {
+    color: gold;
+}
+
+/* li:first-child {
+    color: steelblue;
+}
+
+li:last-child {
+    color: slategray;
+}
+
+li:nth-child(2) {
+    color: aqua;
+}
+
+li:only-child {
+    color: peru;
+}
+
+td:only-child {
+    color: palegreen;
+} */
+
+/* #youtube-link:link {
+    color: blue;
+}
+
+#youtube-link:visited {
+    color: rebeccapurple;
+} */
+
+h2 + a {
+    color: rgb(51, 153, 105);
+}
+
+textarea ~ button {
+    color: powderblue;
+}
+
+ul > li {
+    color: blue;
+}
+
+/* ul li {
+    color: green;
+} */
