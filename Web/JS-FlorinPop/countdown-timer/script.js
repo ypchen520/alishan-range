@@ -1,16 +1,32 @@
-var target = String("Start of Fall Semester");
-const targetDate = '23 Aug 2021';
+var target = String("First Practice Focus Group");
+const targetDate = '25 Aug 2021 16:00:00';
 
 document.getElementById("header").innerHTML = target;
+const daysEl = document.getElementById("days");
+const hoursEl = document.getElementById("hours");
+const minsEl = document.getElementById("mins");
+const secondsEl = document.getElementById("seconds");
 
 function countdown(){
     const tar = new Date(targetDate);
     const curr = new Date();
-    const seconds = (tar - curr) * 1000;
+    const totalSeconds = (tar - curr) / 1000;
 
-    // const seconds
+    const days = Math.floor(totalSeconds / 3600 / 24);
+    const hours = Math.floor(totalSeconds / 3600) % 24;
+    const minutes = Math.floor(totalSeconds / 60) % 60;
+    const seconds = Math.floor(totalSeconds) % 60;
 
-    console.log(tar - curr);
+    // console.log(days, hours, minutes, seconds);
+
+    daysEl.innerHTML = days;
+    hoursEl.innerHTML = formatTime(hours);
+    minsEl.innerHTML = formatTime(minutes);
+    secondsEl.innerHTML = formatTime(seconds);
+}
+
+function formatTime(time){
+    return time < 10 ? (`0${time}`) : time;
 }
 
 countdown();

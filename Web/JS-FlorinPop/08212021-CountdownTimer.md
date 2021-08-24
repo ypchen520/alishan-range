@@ -18,4 +18,5 @@
 ## JS
 
 * call countdown every second
-  * setInterval(countdown, 1000);
+  * **setInterval(countdown, 1000);**
+  
