@@ -5,12 +5,18 @@
 * We are given a list of (axis-aligned) rectangles. Each rectangle[i] = [xi1, yi1, xi2, yi2] , where (xi1, yi1) are the coordinates of the bottom-left corner, and (xi2, yi2) are the coordinates of the top-right corner of the ith rectangle.
 * Find the total area covered by all rectangles in the plane. Since the answer may be too large, return it modulo 109 + 7.
 
-## Solution
+## [Solution](https://leetcode.com/problems/rectangle-area-ii/solution/)
 
 ### [Discretization](https://leetcode.com/problems/rectangle-area-ii/discuss/137914/JavaC%2B%2BPython-Discretization-and-O(NlogN))
 
 * Scan from y (i.e., y<sub>0</sub>), keep track of the current **coverage** of x
   * when we scan the next y (i.e., y<sub>1</sub>), add [(i.e., y<sub>1</sub>) - (i.e., y<sub>0</sub>)] * coverage<sub>0</sub> to the cumulative **area**
+
+### Coordinate Compression
+
+### Line Sweep
+
+### Segment Tree
 
 ### Java
 
