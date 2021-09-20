@@ -1,5 +1,5 @@
-var target = String("First Practice Focus Group");
-const targetDate = '27 Aug 2021 14:00:00';
+var target = String("Monday Morning");
+const targetDate = '6 Sep 2021 5:20:00';
 
 document.getElementById("header").innerHTML = target;
 const daysEl = document.getElementById("days");
