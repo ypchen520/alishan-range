@@ -1,0 +1,7 @@
+venv/
+.DS_Store
+node_modules/
+Thumbs.db
+.idea/
+lib/
+TensorFlow/tensorflow_macos/

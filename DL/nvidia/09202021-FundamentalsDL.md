@@ -1,3 +1,0 @@
-# Fundamentals of DL
-
-* Kaggle

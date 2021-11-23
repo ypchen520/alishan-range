@@ -11,6 +11,8 @@
   * In this folder run
     * **destination venv should be created**
     * ```arch -arm64 bash install_venv.sh --python=[PATH_TO_THE_PYTHON_THAT_WAS_USED_TO_CREATE_THE_VENV] [PATH_TO_VENV]```
+    * example
+      * ```arch -arm64 bash install_venv.sh --python=/Library/Frameworks/Python.framework/Versions/3.8/bin/python3 ../../../../../FALL2021/IBMHackathon/venv```
 * Python3 is shipped with 2 architectures in M1
   * file $(which python3)
     * /usr/bin/python3: Mach-O universal binary with 2 architectures: [x86_64:Mach-O 64-bit executable x86_64] [arm64e:Mach-O 64-bit executable arm64e]

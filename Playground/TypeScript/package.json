@@ -1,0 +1,94 @@
+{
+  "name": "mytrack-cloud-functions",
+  "description": "Cloud Functions for Firebase",
+  "version": "0.1.4",
+  "author": "Ruiz HCI Lab",
+  "main": "lib/index.js",
+  "private": true,
+  "scripts": {
+    "play": "tsc && node lib/index.js",
+    "prepare-dev": "bnr prepare-dev",
+    "prepare-prod": "bnr prepare-prod",
+    "lint": "bnr lint",
+    "build": "bnr build",
+    "serve": "bnr prepare-prod && npm run build && firebase serve --only functions",
+    "shell": "bnr prepare-prod && npm run build && firebase experimental:functions:shell",
+    "start": "bnr prepare-dev && npm run shell",
+    "deploy": "bnr prepare-dev && bnr deploy",
+    "deploy-ci": "bnr prepare-dev && bnr deploy:ci",
+    "deploy-prod": "bnr prepare-prod && bnr deploy-prod",
+    "logs": "firebase functions:log",
+    "test": "bnr prepare-dev && bnr test",
+    "cz": "git-cz",
+    "docs": "bnr docs",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "release": "standard-version --no-verify",
+    "postversion": "git push && git push --tags",
+    "login": "firebase login",
+    "logout": "firebase logout",
+    "functions": "firebase use mytrack-plus && functions start && functions deploy --trigger-http --timeout 600s debug && functions inspect debug --port 6000"
+  },
+  "betterScripts": {
+    "prepare-dev": {
+      "command": "node -e \"require('fs').copyFile('envs/health-notification-study-firebase-adminsdk-wefpq-e4d81ee6a8.json', './mytrack-firebase-adminsdk.json', function(err) { if (err) console.log(err); console.log('File successfully copied!') })\" && bnr build"
+    },
+    "prepare-prod": {
+      "command": "node -e \"require('fs').copyFile('envs/health-notification-study-firebase-adminsdk-wefpq-e4d81ee6a8.json', './mytrack-firebase-adminsdk.json', function(err) { if (err) console.log(err); console.log('File successfully copied!') })\" && bnr build"
+    },
+    "build": {
+      "command": "tsc",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    "build-dev": {
+      "command": "tsc",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^9.11.0",
+    "firebase-functions": "^3.14.1",
+    "hmacsha1": "^1.0.0",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
+    "mytrack-data-classes": "file:mytrack-data-classes-1.13.0.tgz",
+    "nodemailer": "^6.6.1",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@google-cloud/functions-emulator": "^1.0.0-beta.6",
+    "@types/chai": "^4.2.18",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^15.6.1",
+    "better-npm-run": "^0.1.1",
+    "chai": "^4.3.4",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "firebase": "^8.2.3",
+    "firebase-functions-test": "^0.2.3",
+    "firebase-tools": "^9.12.0",
+    "husky": "^6.0.0",
+    "jsdoc": "^3.6.7",
+    "karma": "^6.3.2",
+    "karma-typescript": "^5.5.1",
+    "mocha": "^8.4.0",
+    "nyc": "^15.1.0",
+    "source-map-support": "^0.5.19",
+    "standard-version": "^9.3.0",
+    "ts-node": "^10.0.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.3.2"
+  },
+  "engines": {
+    "node": "10"
+  }
+}
