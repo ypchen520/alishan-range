@@ -52,3 +52,15 @@
   * w0x0 + w1x1 + w2x2 = 0
   * x2 = -w1/w2 * x1 - w0/w2
     * a straight line
+
+## Limitations of the Perceptron
+
+* what happens if a straight line cannot separate the data points
+  * exclusive OR (XOR)
+* one of the key limitations
+  * it can solve classification problems only where the classes are linearly separable
+    * two dimensions: separated by a straight line
+
+## Combining Multiple Perceptrons
+
+## Implementing Perceptrons with Linear Algebra

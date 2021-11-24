@@ -1,6 +1,6 @@
 import random
 import matplotlib.pyplot as plt
-from . import HyperParameters
+from . import HyperParameters, Plot
 
 class Perceptron:
     def __init__(self):
@@ -28,7 +28,11 @@ class Perceptron:
             plt.xlabel('x1')
             plt.ylabel('x2')
         x = [-2.0, 2.0]
-        plt.show()
+        w2 = 1e-5 if (abs(self.weights[2]) < 1e-5) else self.weights[2]
+        y = [-self.weights[1]/w2 * (-2.0) + (-self.weights[0] / w2), -self.weights[1]/w2 * (2.0) + (-self.weights[0] / w2)]
+        plt.plot(x, y , Plot._COLOR_LIST[self.color_index])
+        if self.color_index < (len(Plot._COLOR_LIST) - 1):
+            self.color_index += 1
 
     def initialize(self, x_train, y_train, weights):
         self.x_train = x_train
@@ -54,3 +58,4 @@ class Perceptron:
                         self.weights[j] += y * HyperParameters._LEARNING_RATE * x[j]
                     all_correct = False
                     self.show_learning()
+        plt.show()                    

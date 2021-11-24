@@ -11,5 +11,5 @@ if __name__ == "__main__":
     y = [1.0, 1.0, 1.0, -1.0]
     w = [0.2, -0.6, 0.25]
     p.initialize(x, y, w)
-    p.show_learning()
+    # p.show_learning()
     p.train()
