@@ -1,6 +1,7 @@
 import random
 import matplotlib.pyplot as plt
 from . import HyperParameters, Plot
+import numpy as np
 
 class Perceptron:
     def __init__(self):
@@ -12,13 +13,19 @@ class Perceptron:
         self.color_index = 0
         
     def compute_output(self, w, x):
-        z = 0.0
-        for i in range(len(w)):
-            z += w[i] * x[i]
-        if z < 0:
-            return -1
-        else:
-            return 1
+        # # straightforward
+        # z = 0.0
+        # for i in range(len(w)):
+        #     z += w[i] * x[i]
+        # if z < 0:
+        #     return -1
+        # else:
+        #     return 1
+
+        # NumPy
+        z = np.dot(w,x)
+        return np.sign(z)
+        
     def show_learning(self):
         print(f'w0 = {self.weights[0]:5.2f}, w1 = {self.weights[1]:5.2f}, w2 = {self.weights[2]:5.2f}')
         if self.color_index == 0:
