@@ -178,5 +178,24 @@
     * 1 if z >= 0
     * a line on the plane
       * becomes a 2D chart with a line if we look at the 3D chart from above
+  * changing the bias weight (w0) causes the plane to move up or down on the z-axis
+  * the two other weights (w1 and w2) determine the slope of the plane in the two different dimensions
+* for the general case of a perceptron with n inputs (n dimensions)
+  * two classes are linearly separableif they can be separated by an n-1 dimensional hyperplane
+* dot product
+  * w dot x = |w| * |x| * cos(θ)
+  * the angle between the two vectors will determine the output of the perceptron
+    * θ > 90: -1
+    * θ < 90: 1
 
 ## Understanding the Bias Term
+
+* the rationale for the bias term was to make the perceptron implement an adjustable threshold value
+  * by adjusting w0, the perceptron can be made to implement any arbitrary threshold θ.
+* the bias term is simply the intercept term b in the equation for a straight line
+  * y = mx + b
+
+## Concluding Remarks on the Perceptron
+
+* XOR: The need for connecting multiple perceptrons into a network
+* a binary classifier
