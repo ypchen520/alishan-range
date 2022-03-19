@@ -20,3 +20,7 @@
 * In Go, code executed as an application must be in a main package
 * because you haven't published the module yet, you need to adapt the example.com/hey module so it can find the example.com/greetings code on your local file system
 * run the go mod tidy command to synchronize the example.com/hey module's dependencies, adding those required by the code, but not yet tracked in the module
+
+## Resources
+
+* [how-to-use-go-modules](https://www.digitalocean.com/community/tutorials/how-to-use-go-modules)

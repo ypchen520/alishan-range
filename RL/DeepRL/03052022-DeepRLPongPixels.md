@@ -62,3 +62,4 @@ p = 1.0 / (1.0 + np.exp(-logp)) # sigmoid
 
 * [Best RL Tutorials](https://neptune.ai/blog/best-reinforcement-learning-tutorials-examples-projects-and-courses)
 * [An introduction to Reinforcement Learning](https://medium.com/free-code-camp/an-introduction-to-reinforcement-learning-4339519de419)
+* [Machine Learning for Humans, Part 5: Reinforcement Learning](https://medium.com/machine-learning-for-humans/reinforcement-learning-6eacf258b265)
